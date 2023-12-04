@@ -60,7 +60,7 @@ for rule in rules:
         font("Arial", size - 10)
         fill (1,0,0)
         text(":(", (x + 10, y + 15 - step))
-    elif rule == 2:
+    else:
         fill(None)
         stroke(0, 0, 0)
         strokeWidth(1)
@@ -68,8 +68,6 @@ for rule in rules:
         font("Arial", size - 10)
         fill (0,0,0)
         text(":/", (x + 10, y + 15 - step))
-    else:
-        print(rule, "<— неизвестное правило")
     x += step
     if x >= w - margin:
         x = margin
