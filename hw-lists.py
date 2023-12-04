@@ -44,7 +44,6 @@ step = (w - margin * 2) / 10
 size = step
 
 for rule in rules:
-    # круг, если правило == 0
     if rule == 0:
         fill(None)
         stroke(0, 0, 0)
@@ -53,7 +52,6 @@ for rule in rules:
         font("Arial", size - 10)
         fill (0,1,0)
         text(":)", (x + 10, y + 15 - step))
-    # квадрат, если правило == 1
     elif rule == 1:
         fill(None)
         stroke(0, 0, 0)
@@ -70,7 +68,6 @@ for rule in rules:
         font("Arial", size - 10)
         fill (0,0,0)
         text(":/", (x + 10, y + 15 - step))
-     # всё другое print в консоль
     else:
         print(rule, "<— неизвестное правило")
     x += step
